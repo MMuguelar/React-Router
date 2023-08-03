@@ -1,14 +1,15 @@
-import './App.css';
 
+import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Productos from "./components/productos";
 import Detalle from "./components/detalle";
 import Contacto from "./components/contacto";
-function App() {
-  return (
-    <div class="container-fluid p-0 nav-bar">
+function Navbar() {
+    return (
+
+        <div class="container-fluid p-0 nav-bar">
             <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
                 <a href="index.html" class="navbar-brand px-lg-4 m-0">
                     <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
@@ -47,7 +48,9 @@ function App() {
                 </div>
             </nav>
         </div>
-  );
+
+
+    );
 }
 
-export default App;
+export default Navbar;
